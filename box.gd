@@ -1,6 +1,6 @@
 extends MeshInstance
 
-export var use_quaternions = false
+export var use_quaternions = true
  
 var mass = 1.0
 var mu   = 1.0/mass

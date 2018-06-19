@@ -7,8 +7,6 @@ valid=false
 [deps]
 
 source_file="res://TetrahedronMap/czworokontCSV.csv"
-source_md5="c04dec171dc1467abc4f492b578ee641"
-
 [params]
 
 compress=true

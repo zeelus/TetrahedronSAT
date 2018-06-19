@@ -8,10 +8,7 @@ path.etc2="res://.import/stone.jpg-78775d0b804ef3e09ccd8109c6202f5c.etc2.stex"
 [deps]
 
 source_file="res://inc/stone.jpg"
-source_md5="3527d68c981eb1d2c508d15bcc57b348"
-
 dest_files=[ "res://.import/stone.jpg-78775d0b804ef3e09ccd8109c6202f5c.s3tc.stex", "res://.import/stone.jpg-78775d0b804ef3e09ccd8109c6202f5c.etc2.stex" ]
-dest_md5="5cca1c56c859d835f2d445740c9f2ece"
 
 [params]
 
