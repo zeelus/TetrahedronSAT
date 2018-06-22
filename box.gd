@@ -4,7 +4,7 @@ export var use_quaternions = true
  
 var mass = 1.0
 var mu   = 1.0/mass
-var Principal_Moments_of_Inertia     = Vector3(2*mass/3.0,2*mass/3.0,2*mass/3.0) # 1/12 * m * (2^2 + 2^2) = 8/12 m = 2/3 m
+var Principal_Moments_of_Inertia     = Vector3(0.702 * mass, 0.691 * mass, 0.695) #Vector3(2*mass/3.0,2*mass/3.0,2*mass/3.0) # 1/12 * m * (2^2 + 2^2) = 8/12 m = 2/3 m
 var inv_Principal_Moments_of_Inertia = Vector3(1.0,1.0,1.0) / Principal_Moments_of_Inertia
  
 var XYZ = [Vector3(1.0,0.0,0.0),
