@@ -23,6 +23,8 @@ export var angular_velocity      = Vector3(1.0,0.0,0.0)
 var next_angular_velocity        = Vector3(0,0,0)
 var rotation_representation      = Quat(Vector3(0.6,0.8,0.0),0.123)
 var next_rotation_representation = Quat(0,0,0,1)
+
+var isNew = true
  
 # misc
 var time = 10.0
@@ -53,7 +55,13 @@ func _ready():
  
 func _physics_process(delta):
 	if !isStatic:
-		verlet(delta) # wykonaj całkowanie
+		
+		if self.isNew:
+			euler(delta)
+			self.isNew = false
+		else:
+			verlet(delta) # wykonaj całkowanie
+			
 		accept(delta) # zakceptuj nowe zmienne
  
 func _process(delta):
@@ -113,7 +121,7 @@ func torque(delta):
  
 # siła
 func force(delta):
-	return -0.1*position-0.1*velocity # naiwna siła sprężystości
+	return Vector3(0.0,0.0,0.0) #-0.1*position-0.1*velocity # naiwna siła sprężystości
  
 # wektor w kwaternion
 func quaternionize(vec):
